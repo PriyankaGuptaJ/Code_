@@ -1,0 +1,25 @@
+madlib = input("Are you ready for the exciting game? (type Yes/No").lower()
+
+while madlib != "yes":
+print("one more try!")
+madlib = input("Are you ready for the exciting game? (only type Yes/No)").lower()
+if madlib != "yes":
+quit()
+
+print("great!")
+print("lets start!")
+
+adjective = input("enter an adjective: ")
+person = input("enter a name of a person: ")
+animal = input ("enter an animal" )
+verb = input("verb ending in -ing: ")
+place = input("enter a place: ")
+noun = input("enter a plural noun: ")
+noun2= input("singular noun: " )
+food = input("your favourite food: ")
+food2 = input("another favourite food: ")
+emotion = input("what emotion are you experiencing at this moment? ")
+
+Game = f"Today, I went to the zoo with my {adjective} friend, {person}. We saw a {adjective} {animal} that was {verb} near {place}.Next, we visited the {adjective} monkeys who were {verb} from tree to tree. One of the monkeys tried to get my {noun} and tried {verb}. For lunch, we had {food} and {food2} at {place}. It was a very {adjective} day, and we both felt {emotion} by the end.Before we left, we made sure to buy a {noun2} from the gift shop as a {adjective} memory of our adventure."
+
+print(Game)
